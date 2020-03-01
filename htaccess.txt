@@ -1,0 +1,14 @@
+Options +FollowSymLinks
+    <IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{HTTP_HOST} ^http://localhost/logos [NC]
+    RewriteRule ^(.*)$ http://localhost/logos/$1 [L,R=301]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^([a-zA-Z0-9-_]*)/?([a-zA-Z0-9-_]*)?/?([a-zA-Z0-9-_]*)?/?([a-zA-Z0-9-_]*)?/?([a-zA-Z0-9-_]*)?/?$ index.php?page=$1&aksi=$2&s1=$3&s2=$4&s3=$5 [NC,L]
+    </IfModule>
+    <ifmodule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+    </ifmodule>
+    ExpiresActive on
+    ExpiresDefault A604800
