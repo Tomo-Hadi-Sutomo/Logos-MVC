@@ -1,0 +1,172 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	height: 100%;
+	background:url("../images/page.png");
+    background-repeat: repeat !important;
+	background-attachment: fixed;
+}
+.wrapper {
+	min-width: 120px;
+	max-width: 3920px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 120px;
+	font:64px Bodoni MT;
+	text-align:center;
+	padding: 40px 0 50px 0;
+}
+.subheader{
+	font:24px Bodoni MT;
+	text-align:center;
+	padding: 5px 0 0 0;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.middle {
+	width: 100%;
+	padding: 0 0 100px 0px;
+	margin:0 0 100px 0
+}
+.middle:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+.container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+.breadcrumb{
+	width: 100%;
+	height:20px;
+	font:14px Arial;
+	font-weight:bold;
+	text-align:center;
+	background : #cccccc;
+}
+.wrapper2 {
+	width: 56%;
+	min-height:300px;
+	border:1px solid #cccccc;
+	position: relative;
+	text-align:center;
+	margin:0 22% 0 22%;
+	border-radius:4px;
+}
+.content {
+	padding: 2%;
+}
+/* Left Sidebar
+-----------------------------------------------------------------------------*/
+.kiri {
+	float: left;
+	width: 20%;
+	margin-left: -100%;
+	position: relative;
+	text-align:right;
+	font:16px Bodoni MT;
+	color:#492507;
+}
+a{
+	text-decoration:none;
+	color:darkorange;
+}
+a:hover{
+	color:darkgreen;
+}
+
+
+/* Right Sidebar
+-----------------------------------------------------------------------------*/
+.kanan {
+	float: left;
+	width: 20%;
+	margin-left: -20%;
+	position: relative;
+	text-align:left;
+	font:16px Bodoni MT;
+	color:#492507;
+}
+.info{
+	width:170px;
+	height:10px;
+	background:#cccccc;
+	border:1px solid #cccccc;
+	position: relative;
+	font:9px arial;
+	text-align:center;
+	margin:0 52% 0 22%;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	margin: -100px auto 0;
+	min-width: 120px;
+	max-width: 3920px;
+	height: 100px;
+	text-align:center;
+	position: relative;
+}
